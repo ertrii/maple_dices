@@ -1,0 +1,192 @@
+body{
+	background-image: url("../img/back0.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+.game-main{
+	min-height: 80vh;
+}
+.formStats{
+	/*margin: auto;*/
+	background-image: url(../img/charInfo1.png);
+	width: 178px;
+	height: 260px;
+	color: white;
+	display: flex;
+	flex-direction: column;	
+	padding: 16px 25px 0px;
+	box-sizing: border-box;
+}
+#lvChar{
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+	color: #FFDC00;
+	text-shadow: 0px 0px 5px #665544;
+}
+
+.formStats #nameUser{
+	width: 100%;
+	margin-bottom: 7px;
+}
+
+.formStats .infoChar{	
+	height: 73px;
+}
+.formStats .infoChar .text{
+	font-size: .8em;
+	margin: 0;
+	height: 33%;
+	padding-top: 1px;
+	text-shadow: 0px 0px 2px black;
+	text-align: right;
+}
+.colStats{
+	display: flex;	
+}
+.colStat1, .colStat2{
+	text-shadow: 0px 0px 2px black;
+	width: 50%;
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 15px;
+}
+.colStat1 p, .colStat2 p{	
+	font-size: .8em;
+	margin: 1px 0;
+}
+.colStat1 p:nth-child(1), .colStat2 p:nth-child(1){
+	margin-bottom: 13px;
+}
+.colStat1 p:nth-child(2), .colStat2 p:nth-child(2){
+	line-height: 1px;
+	margin-bottom: 6px;
+}
+
+.formStats #dice{
+	width: 100%;	
+	text-align: center;
+}
+.formStats #dice img{
+	cursor: pointer;
+}
+#btn_dice{
+	
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin: auto;
+	width: 37px;
+	height: 56px;
+}
+.infoFormStats{
+	text-align: center;	
+	width: 100%;
+	max-width: 450px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 10px;
+	color: #665544;	
+}
+
+/*Estilo Buttom DONE*/
+
+.infoFormStats button{
+	border: none;	
+	color: white;
+	margin-top: 10px;
+	background: linear-gradient(#FFDC00, #DD8206);
+	padding: 1px 15px;
+	border-radius: 5px;	
+	border: 1px solid #665544;
+	font-weight: bold;
+	cursor: pointer;
+}
+.infoFormStats button:hover{
+	text-shadow: 0px 0px 10px white;
+}
+.infoFormStats button:active{
+	background: linear-gradient(#DD8206, #FFDC00);
+}
+
+.infoFormStats .btn_doneStyle{
+	background: linear-gradient(#ddd, #ccc);
+	color: #eee;
+	cursor: default;
+	border: 1px solid #ccc;
+
+}
+.infoFormStats .btn_doneStyle:hover{
+	text-shadow: 0px 0px 0px white;
+}
+
+/*Estilo Table Stats*/
+
+#tableStatsSave tr td:nth-child(6){
+	color: #9EB944;
+}
+#tableStatsSave tr td:nth-child(7){
+	color: #FF3000;
+}
+
+/*Info del Juego*/
+.mapleInfo{
+	text-align: center;
+}
+.ranking .table{
+	font-size: .7em;
+}
+.tuto .tuto-info{
+	font-size: .7em;
+}
+.tuto h5{
+	color: #FFDC00;	
+}
+.tuto h6{
+	text-align: center;
+	color: #FFDC00;	
+}
+.tuto .tuto-atajos{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: flex-end;
+}
+
+
+/*Barra de Experiencia*/
+
+.expChar{
+	width: 100%;	
+	box-shadow: inset 1px 1px 5px -1px #665544;	
+	height: 7px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	font-size: 10pt;
+	position: fixed;
+	bottom: 0%;
+	background-color: #ccc;
+}
+.expChar p{
+	position: relative;
+	z-index: 1;	
+	font-weight: bold;
+	text-align: right;	
+	padding-right: 5px;
+	text-shadow: 0px 0px 1px white;
+}
+.expChar p i{
+	color:steelblue;	
+}
+.expChar p span{	
+	color: #DD8206;
+}
+.expChar #barra{
+	transition: ease 1s;
+	box-shadow: inset 1px 1px 5px -1px #665544;	
+	height: 92%;	
+	background: linear-gradient(#CAE942, #84A946);
+	position: absolute;	
+}

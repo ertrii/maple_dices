@@ -1,0 +1,33 @@
+body{	
+	background-image: url(../img/back0.jpg);
+	background-size: 100% 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	color: #8C94A1;
+}
+.titlePage{
+	text-align: center;
+	font-weight: bold;
+}
+
+#session, #register{
+	max-width: 350px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 15px;
+	border-radius: 15px;
+	margin: auto;
+	box-shadow: 1px 1px 5px #8C94A1;
+}
+
+#register{
+	margin-top: 50px;
+}
+
+#session input[type='submit'], #register input[type='submit']{
+	width: 100%;
+	background-color: #8C94A1;
+	border: none;
+}
+
